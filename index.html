@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Kazuya Matsuo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-left">
+          <h2>Kazuya Matuso</h2>
+        </div>
+        <div class="header-right">
+          <a href="#responsive" class="menu">表示変更</a>
+          <a href="#aboutme" class="menu">About Me</a>
+          <a href="#works" class="menu">Works</a>
+          <a href=""><i class="fab fa-github fa-2x"></i></a>
+        </div>
+      </div>
+    </header>
+    <div class="top-wrapper"> 
+      <div class="container">
+        <h1>HELLO WORLD.</h1>
+        <h1>I'M KAZUYA MATSUO</h1>
+        </div>
+      </div>
+    <div class="responsive-wrapper" id="responsive">
+      <div class="container">
+        <div class="heading">
+          <h2>レスポンシブデザインに対応しています</h2>
+          <p>現在製作中</p>
+        </div>
+        <div class="device-box">
+          <div class="device-item pc">
+            <i class="fas fa-laptop fa-7x"></i>
+            <p>PC向け表示</p>
+            <p class="now-showing">現在表示中</p>
+          </div>
+          <div class="device-item tab">
+            <i class="fas fa-tablet-alt fa-7x"></i>
+            <p>タブレット向け表示</p>
+            <p class="now-showing">現在表示中</p>
+          </div>
+          <div class="device-item sp">
+            <i class="fas fa-mobile-alt fa-7x"></i>
+            <p>スマートフォン向け表示</p>
+            <p class="now-showing">現在表示中</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- about me -->
+    <div class="aboutme-wrapper" id="aboutme">
+      <div class="container">
+        <div class="heading">
+          <h2>About Me</h2>
+        </div>
+        <div class="profile-area">
+          <div class="profile">
+            <div class="profile icon">
+              <img src="img/portfolio.png"></img>
+            </div>
+            <div class="profile description">
+              <p>testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest</p>
+            </div>
+          </div>
+          <!-- cv セクション -->
+          <div class="cv">
+            <btn class="btn cv-expand">詳しい経歴はこちらから</btn><span class="fas fa-chevron-down"></span>
+            <div class="cv-list">
+              <div class="cv-item">
+                <h4>2019/10〜 クレジット端末のアプリケーションのテスト</h4>
+                <span>+</span>
+                  <div class="cv-detail">
+                    <p>こんなことやりました</p>
+                  </div>
+              </div>
+              <div class="cv-item">
+                <h4>2019/10〜 クレジット端末のアプリケーションのテスト</h4>
+                <span>+</span>
+                <div class="cv-detail">
+                  <p>こんなことやりました</p>
+                </div>
+              </div>
+              <div class="cv-item">
+                <h4>2019/10〜 クレジット端末のアプリケーションのテスト</h4>
+                <span>+</span>
+                <div class="cv-detail">
+                  <p>こんなことやりました</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 制作物一覧 -->
+    <div class="works-wrapper" id="works"> 
+      <div class="container">
+        <div class="heading">
+          <h2>Works</h2>
+        </div>
+        <div class="works-box">
+          <div class="works-item">
+            <img src="img/portfolio.jpg" class="modal-show" id="portfolio"></i>
+            <p>ポートフォリオ</p>
+            </div>
+          <div class="works-item">
+            <img src="img/works-cs.jpg" class="modal-show" id="no2"></i>
+            <p>No.2</p>  
+          </div>
+          <div class="works-item">
+              <img src="img/works-cs.jpg" class="modal-show" id="no3"></i>
+              <p>No.3</p>    
+          </div>
+          <div class="works-item">
+            <img src="img/works-cs.jpg" class="modal-show" id="no4"></i>
+            <p>No.4</p>    
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ポートフォリオモーダル -->
+    <div class="modal" id="portfolio-modal">
+      <div class="modal-container">
+        <div class="close-modal">
+          <i class="fas fa-times-circle fa-2x close"></i>
+        </div>
+        <div class="modal-box">
+          <div class="modal-description">
+            <h3>ポートフォリオ</h3>
+            <p>このサイトです。<br>レスポンシブデザインに対応するよう製作しました。<br>
+              モーダル、アコーディオンなどをjQueryで実装しました。<br>
+            </p>
+            <h3 class="languages">使用言語など</h3>
+            <p>HTML, CSS, jQuery</p>
+          </div>
+          <div class="modal-photo">
+            <img src="img/portfolio.jpg">
+          </div>
+      </div>
+    </div>
+  </div>
+  <!-- モーダル2 -->
+  <div class="modal" id="no2-modal">
+      <div class="modal-container">
+        <div class="close-modal">
+          <i class="fas fa-times-circle fa-2x close"></i>
+        </div>
+        <div class="modal-box">
+          <div class="modal-description">
+            <h3>test no.2</h3>
+            <p>aaaaaaaa</p>
+            <h3 class="languages">使用言語など</h3>
+            <p>test</p>
+          </div>
+        <div class="modal-photo">
+          <img src="img/works-cs.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+   <!-- モーダル3 -->
+   <div class="modal" id="no3-modal">
+      <div class="modal-container">
+        <div class="close-modal">
+          <i class="fas fa-times-circle fa-2x close"></i>
+        </div>
+        <div class="modal-box">
+          <div class="modal-description">
+            <h3>test no.3</h3>
+            <p>test test no 3</p>
+            <h3 class="languages">使用言語など</h3>
+            <p>test no3</p>
+          </div>
+        <div class="modal-photo">
+          <img src="img/works-cs.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+   <!-- モーダル4 -->
+   <div class="modal" id="no4-modal">
+      <div class="modal-container">
+        <div class="close-modal">
+          <i class="fas fa-times-circle fa-2x close"></i>
+        </div>
+        <div class="modal-box">
+          <div class="modal-description">
+            <h3>test no.4</h3>
+            <p>no4 aaaaaaaa</p>
+            <h3 class="languages">使用言語など</h3>
+            <p>testno4</p>
+          </div>
+        <div class="modal-photo">
+          <img src="img/works-cs.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+    <footer>
+      <div class="container">
+        <h1>Thank You!</h1>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
