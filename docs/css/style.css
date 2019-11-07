@@ -12,6 +12,7 @@ a {
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 /* ヘッダー */
@@ -31,7 +32,6 @@ header {
 
 .header-right {
   float: right;
-  /* margin-right: -45px; */
   padding: 20px 0 0 0;
 }
 
@@ -45,7 +45,6 @@ header a {
 
 /* トップラッパー */
 .top-wrapper {
-  width: 100%;
   padding: 300px 0 300px;
   background-image: url("../img/top_photo.jpeg");
   background-size: cover;
@@ -80,11 +79,15 @@ header a {
 }
 
 .device-item {
-  width: 33%;
+  width: 50%;
 }
 
 .device-item p {
   font-size: 16px;
+}
+
+.device-logo {
+  font-size: 100px;
 }
 
 .tab .now-showing {
@@ -110,6 +113,7 @@ header a {
   box-shadow: 0 0 10px rgba(80, 80, 80, 0.7);
   padding: 20px 0 50px;
 }
+
 .profile {
   display: flex;
   padding: 20px 0;
@@ -273,6 +277,7 @@ header a {
   padding: 20px 0;
   align-content: center;
 }
+
 .modal-photo img {
   width: 700px;
   height: auto;

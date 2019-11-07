@@ -1,0 +1,75 @@
+@media screen and (max-width: 670px) {
+    header {
+        height: 40px;
+    }
+
+    .header-left h2 {
+        font-size: 14px;
+    }
+
+    .header-right {
+        display: none;
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+    .btn {
+        width: 100%;
+        display: inline;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .top-wrapper {
+        padding: 100px 0 100px;
+        margin-top: 40px;
+        text-align: left;
+    }
+
+    .top-wrapper h1 {
+        font-size: 20px;
+    }
+
+    /* responsive-wrapper */
+    .responsive-wrapper {
+    }
+
+    .device-item {
+        width: 100%;
+      }
+
+    .device-logo {
+        font-size: 80px;
+    }
+    .pc .now-showing {
+        display: none;
+      }
+      
+    .sp .now-showing {
+        display: inline-block;
+    }
+
+    /* aboutme */
+    .aboutme-wrapper {
+    }
+
+
+
+    .works-item {
+        width: 100%;
+    }
+
+    /* works */
+    .works-wrapper {
+    }
+    
+    .works-item img {
+        width: 100%;
+        height: auto;
+        box-shadow: 0 0 4px #070707;
+    }     
+}
