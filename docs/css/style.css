@@ -116,7 +116,7 @@ header a {
 
 .profile {
   display: flex;
-  padding: 20px 0;
+  padding: 20px 20px;
   justify-content: center;
 }
 
@@ -126,15 +126,14 @@ header a {
   text-align: center;
 }
 
-.icon img {
-  max-width: 100px;
-  max-height: 100px;
-  border-radius: 50px;
+.icon .fas {
+  font-size: 100px;
 }
 
 .description {
-  widows: 50%;
+  width: 85%;
   justify-content: initial;
+  text-align: left;
 }
 
 /* 経歴セクション */
@@ -166,11 +165,12 @@ header a {
 .active {
   display: block;
 }
+
 .cv-list {
   display: none;
   text-align: left;
   cursor: pointer;
-  width: 700px;
+  width: 900px;
   margin: 50px auto;
   padding-bottom: 0px;
 }
@@ -187,11 +187,15 @@ header a {
 .cv-item span {
   position: absolute;
   top: 0px;
-  left: 680px;
+  right: 10px; 
 }
 
 .cv-detail {
   display: none;
+}
+
+.cv-detail p {
+  font-size: 14px;
 }
 
 /* worksラッパー */

@@ -32,12 +32,31 @@ $(function() {
         }
     })
 
+    function bodyFix(scrollPosition) {
+        $('html, body').css({
+            position: 'fixed',
+            width: '100%',
+            top: -1 * scrollPosition,
+            backgroundcolor: 000
+        });
+        console.log(scrollPosition);
+    }
+
+    function bodyRelease(scrollPosition) {
+        $('html, body').attr({style: ''});
+        $('html, body').prop( { scrollTop: scrollPosition } );
+        console.log(scrollPosition);
+    }
+
+
     // 制作物モーダル表示処理
     $('.modal-show').click(function(){
         var $modalId = $(this).attr("id"); //制作物一覧でクリックされたidを取得して代入
+        var scrollPosition = $(window).scrollTop();
         console.log($modalId)
         switch ($modalId) {
             case 'portfolio': //ポートフォリオの場合
+                bodyFix(scrollPosition);
                 $('#portfolio-modal').fadeIn();
                 break;
             case 'no2': //test no2の場合
@@ -53,6 +72,8 @@ $(function() {
     })
     //制作物モーダルクローズ処理
     $('.close-modal').click(function(){
+        var scrollPosition = $(window).scrollTop();
         $('.modal').fadeOut();
+        bodyRelease(scrollPosition);
     })
 })
