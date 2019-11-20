@@ -1,0 +1,298 @@
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN";
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* ヘッダー */
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #000000;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
+  padding: 20px 0 0 0;
+}
+
+header a {
+  color: #000000;
+}
+
+.menu {
+  margin: 0 50px 0 0;
+}
+
+/* トップラッパー */
+.top-wrapper {
+  padding: 300px 0 300px;
+  background-image: url("../img/top_photo.jpeg");
+  background-size: cover;
+  background-position: 50% 50%;
+  color: white;
+  text-align: center;
+  background-position: center;
+  margin-top: 65px;
+}
+
+.top-wrapper h1 {
+  opacity: 1;
+  font-size: 45px;
+  letter-spacing: 5px;
+}
+
+.top-wrapper p {
+  opacity: 0.9;
+}
+
+/* レスポンシブ対応ラッパー */
+.responsive-wrapper {
+  padding: 50px 0 0;
+  text-align: center;
+}
+
+.device-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 50px 0;
+}
+
+.device-item {
+  width: 50%;
+}
+
+.device-item p {
+  font-size: 16px;
+}
+
+.device-logo {
+  font-size: 100px;
+}
+
+.tab .now-showing {
+  display: none;
+}
+
+.sp .now-showing {
+  display: none;
+}
+
+/* aboutmeラッパー */
+.aboutme-wrapper {
+  background-color: #f7f7f7;
+  text-align: center;
+  padding: 50px 0 50px;
+}
+
+.profile-area {
+  background-color: #ffffff;
+  border-radius: 1px;
+  width: 100%;
+  margin: 50px 0;
+  box-shadow: 0 0 10px rgba(80, 80, 80, 0.7);
+  padding: 20px 0 50px;
+}
+
+.profile {
+  display: flex;
+  padding: 20px 20px;
+  justify-content: center;
+}
+
+.icon {
+  width: 20%;
+  margin: auto 0;
+  text-align: center;
+}
+
+.icon .fas {
+  font-size: 100px;
+}
+
+.description {
+  width: 85%;
+  justify-content: initial;
+  text-align: left;
+}
+
+/* 経歴セクション */
+.cv {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px 0 0;
+}
+
+.btn {
+  width: 500px;
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  border: solid 3px #000000;
+}
+
+.cv-expand {
+  font-weight: bold;
+}
+
+.fa-chevron-down {
+  position: relative;
+  top: 0px;
+  right: 35px;
+}
+
+.active {
+  display: block;
+}
+
+.cv-list {
+  display: none;
+  text-align: left;
+  cursor: pointer;
+  width: 900px;
+  margin: 50px auto;
+  padding-bottom: 0px;
+}
+
+.cv-item {
+  position: relative;
+}
+
+.cv-item h4 {
+  border-bottom: solid 1px #cccccc;  
+  font-weight: normal;
+}
+
+.cv-item span {
+  position: absolute;
+  top: 0px;
+  right: 10px; 
+}
+
+.cv-detail {
+  display: none;
+}
+
+.cv-detail p {
+  font-size: 14px;
+}
+
+/* worksラッパー */
+.works-wrapper {
+  padding: 50px 0 50px;
+  text-align: center;
+}
+
+.works-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  padding: 20px 0;
+}
+
+.works-item {
+  width: 50%;
+  margin-bottom: 50px;
+}
+
+.works-item img {
+  max-width: 450px;
+  max-height: 250px;
+  box-shadow: 0 0 10px #000000;
+}
+
+.works-item img:hover {
+  box-shadow: 0 0 20px #000000;
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+ 
+/* 成果物モーダル */
+.modal {
+  display: none;
+  max-width: 1170px;
+  width: 100%;
+  height: 500px;
+  position: fixed;
+  top: 15%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 0 10px rgba(80, 80, 80, 0.7);
+  padding: 50px 25px;
+  z-index: 100;
+}
+
+/* クローズボタン */
+.fa-times-circle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.modal-box {
+  display: flex;
+  justify-content: space-around;
+}
+
+.modal-description {
+  width: 35%;
+}
+
+.modal-photo {
+  text-align: center;
+  width: 65%;
+}
+
+.modal-description p {
+  font-size: 14px;
+}
+
+.languages {
+  padding: 30px 0 0;
+}
+
+.modal-photo {
+  padding: 20px 0;
+  align-content: center;
+}
+
+.modal-photo img {
+  width: 700px;
+  height: auto;
+  box-shadow: 0 0 4px #070707;
+}
+
+/* フッター */
+footer {
+  width: 100%;
+  background-color: #f7f7f7;
+  padding: 100px 0;
+  text-align: center;
+}
+
